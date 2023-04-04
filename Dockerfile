@@ -11,7 +11,7 @@ ARG LDFLAGS="-s -w"
 COPY . /building
 WORKDIR /building
 
-RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -trimpath -ldflags "$(LDFLAGS)" -o bin/$(BIN_NAME) ./cmd
+RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -trimpath -ldflags "${LDFLAGS}" -o bin/${BIN_NAME} ./cmd
 
 FROM alpine:3
 
