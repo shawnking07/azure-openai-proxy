@@ -20,7 +20,7 @@ var (
 	AzureOpenAIAPIVer = ""
 
 	AzureOpenAIModelMapper = map[string]string{
-		"gpt-3.5-turbo": "gpt-35-turbo",
+		"gpt-3.5-turbo": "gpt-35-turbo-0301",
 	}
 	fallbackModelMapper = regexp.MustCompile(`[.:]`)
 )
