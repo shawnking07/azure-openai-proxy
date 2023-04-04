@@ -33,4 +33,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm/v6,linux/arm64
           push: true
-          tags: shawnking07/azure-openai-proxy:${{ github.event.inputs.tags }}
+          tags: ghcr.io/shawnking07/azure-openai-proxy:${{ github.event.inputs.tags }}
