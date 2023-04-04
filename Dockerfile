@@ -1,4 +1,4 @@
-FROM golang:1.19 AS building
+FROM --platform=linux/amd64 golang:1.19 as building
 
 COPY . /building
 WORKDIR /building
